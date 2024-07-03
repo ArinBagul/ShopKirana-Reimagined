@@ -1,0 +1,178 @@
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem 3rem;
+  /* width: 100%; */
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  width: 100%;
+  height: 70vh;
+  padding: 50px;
+  border-radius: 45px;
+  justify-content: space-between;
+  /* margin: auto; */
+}
+
+.text-ctr {
+  font-size: 3rem;
+  user-select: none;
+  color: var(--dark);
+}
+
+.ani-txt-ctr {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.ani-ctr {
+  position: relative;
+  display: grid;
+  overflow: hidden;
+  transition: transform 0.667s cubic-bezier(0.19, 1, 0.22, 1) 0s,
+    color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+.a1 {
+  transform: translateY(0%);
+}
+
+.ani-txt-1 {
+  grid-area: 1/1;
+  position: absolute;
+  transition: transform 0.667s cubic-bezier(0.19, 1, 0.22, 1) 0s,
+    color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+.abc {
+  transform: translateY(-100%);
+}
+
+.ani-txt-2 {
+  grid-area: 1/1;
+  transition: transform 0.667s cubic-bezier(0.19, 1, 0.22, 1) 0s,
+    color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+.xyz {
+  transform: translateY(105%);
+}
+
+.social ul {
+  display: flex;
+  gap: 15px;
+}
+
+.social ul li a {
+  color: var(--bg-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grey);
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.social ul li:nth-child(1) a {
+  background-color: var(--primary);
+}
+
+.social ul li a:hover {
+  background-color: var(--primary);
+}
+
+.hero-bottom {
+  width: 100%;
+  background-color: var(--dark);
+  padding: 50px;
+  margin: 2.5rem 0;
+  border-radius: 45px;
+}
+
+.hero-image {
+  position: absolute;
+  bottom: -2rem;
+  right: 3rem;
+  /* background-color: aqua; */
+}
+.hero-image img {
+  width: 800px;
+  filter: drop-shadow(-2px 2px 0 #ffff);
+}
+
+.hero-btm-heading {
+  font-size: 1.4rem;
+  color: var(--bg-light);
+  margin-bottom: 2rem;
+}
+
+.emp-head-bullet {
+  background-color: var(--primary);
+  padding: 2px 15px;
+  border-radius: 12px;
+}
+
+.form-container {
+  display: flex;
+  gap: 30px;
+}
+
+.form-container input {
+  flex: 1;
+  font-size: 16px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: none;
+  font-family: "Poppins";
+  color: var(--light-grey);
+  font-weight: 600;
+}
+
+/* Apply styles to the placeholder text */
+input::placeholder {
+  font-weight: 600;
+  color: var(--light-grey); /* Change this color as needed */
+  opacity: 1; /* Optional: ensures full opacity */
+}
+
+/* For older versions of browsers, you may need to include vendor prefixes */
+input::-webkit-input-placeholder {
+  color: var(--light-grey);
+}
+
+input:-ms-input-placeholder {
+  color: var(--light-grey);
+}
+
+input::-ms-input-placeholder {
+  color: var(--light-grey);
+}
+
+.form-container button {
+  width: 200px;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-size: 16px;
+  border: none;
+  font-weight: 700;
+  color: var(--bg-light);
+  background-color: var(--primary);
+  cursor: pointer;
+  box-shadow: -2px 2px 0 var(--bg-light);
+  transition: all 0.2s ease-out;
+}
+
+/* .form-container button:hover{
+    box-shadow: none;
+} */
+
+.form-container button:active {
+  box-shadow: none;
+  transform: translate(-2px, 2px);
+}
