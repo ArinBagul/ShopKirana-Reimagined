@@ -1,0 +1,10 @@
+.heading-comp{
+    color: var(--dark);
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+
+.emph-heading{
+    color: var(--primary);
+}

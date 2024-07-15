@@ -1,0 +1,25 @@
+#impact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem;
+}
+
+.impact-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 54px 0;
+}
+
+.environment{
+    border-radius: 38px;
+    background: radial-gradient(95.16% 83.02% at 50% 50%, #FFF 0%, #595959 100%);
+}
+
+.impact-col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

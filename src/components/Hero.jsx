@@ -1,41 +1,77 @@
 import React, { useEffect, useRef } from "react";
 import "../styles/Hero.css";
+
 import heroImage from "../assets/heroImage.png";
 
+import insta from "../assets/insta.svg";
+import facebook from "../assets/facebook.svg";
+import linkedIn from "../assets/linkedIn.svg";
+
 function Hero() {
-  const aniCtrRef = useRef(null);
-  const aniCtr1Ref = useRef(null);
-  const aniCtr2Ref = useRef(null);
+  const aniCtrRef1 = useRef(null);
+  const aniCtr1Ref1 = useRef(null);
+  const aniCtr2Ref1 = useRef(null);
+
+  const aniCtrRef2 = useRef(null);
+  const aniCtr1Ref2 = useRef(null);
+  const aniCtr2Ref2 = useRef(null);
 
   useEffect(() => {
-    const aniCtr = aniCtrRef.current;
-    const aniCtr1 = aniCtr1Ref.current;
-    const aniCtr2 = aniCtr2Ref.current;
+    const aniCtr1 = aniCtrRef1.current;
+    const aniCtr1_1 = aniCtr1Ref1.current;
+    const aniCtr2_1 = aniCtr2Ref1.current;
 
-    const handleMouseEnter = () => {
-      aniCtr1.classList.remove("a1");
-      aniCtr1.classList.add("abc");
-      aniCtr2.classList.remove("xyz");
-      aniCtr2.classList.add("a1");
+    const aniCtr2 = aniCtrRef2.current;
+    const aniCtr1_2 = aniCtr1Ref2.current;
+    const aniCtr2_2 = aniCtr2Ref2.current;
+
+    const handleMouseEnter1 = () => {
+      aniCtr1_1.classList.remove("a1");
+      aniCtr1_1.classList.add("abc");
+      aniCtr2_1.classList.remove("xyz");
+      aniCtr2_1.classList.add("a1");
     };
 
-    const handleMouseLeave = () => {
-      aniCtr2.classList.remove("a1");
-      aniCtr2.classList.add("xyz");
-      aniCtr1.classList.remove("abc");
-      aniCtr1.classList.add("a1");
+    const handleMouseLeave1 = () => {
+      aniCtr2_1.classList.remove("a1");
+      aniCtr2_1.classList.add("xyz");
+      aniCtr1_1.classList.remove("abc");
+      aniCtr1_1.classList.add("a1");
     };
 
-    if (aniCtr) {
-      aniCtr.addEventListener("mouseenter", handleMouseEnter);
-      aniCtr.addEventListener("mouseleave", handleMouseLeave);
+    const handleMouseEnter2 = () => {
+      aniCtr1_2.classList.remove("a1");
+      aniCtr1_2.classList.add("abc");
+      aniCtr2_2.classList.remove("xyz");
+      aniCtr2_2.classList.add("a1");
+    };
+
+    const handleMouseLeave2 = () => {
+      aniCtr2_2.classList.remove("a1");
+      aniCtr2_2.classList.add("xyz");
+      aniCtr1_2.classList.remove("abc");
+      aniCtr1_2.classList.add("a1");
+    };
+
+    if (aniCtr1) {
+      aniCtr1.addEventListener("mouseenter", handleMouseEnter1);
+      aniCtr1.addEventListener("mouseleave", handleMouseLeave1);
+    }
+
+    if (aniCtr2) {
+      aniCtr2.addEventListener("mouseenter", handleMouseEnter2);
+      aniCtr2.addEventListener("mouseleave", handleMouseLeave2);
     }
 
     // Cleanup the event listener on component unmount
     return () => {
-      if (aniCtr) {
-        aniCtr.addEventListener("mouseenter", handleMouseEnter);
-        aniCtr.addEventListener("mouseleave", handleMouseLeave);
+      if (aniCtr1) {
+        aniCtr1.removeEventListener("mouseenter", handleMouseEnter1);
+        aniCtr1.removeEventListener("mouseleave", handleMouseLeave1);
+      }
+      if (aniCtr2) {
+        aniCtr2.removeEventListener("mouseenter", handleMouseEnter2);
+        aniCtr2.removeEventListener("mouseleave", handleMouseLeave2);
       }
     };
   }, []);
@@ -47,16 +83,16 @@ function Hero() {
           <h1>Empowering Retailers with</h1>
           <h1>
             <span className="ani-txt-ctr">
-              <span className="ani-ctr" ref={aniCtrRef}>
+              <span className="ani-ctr" ref={aniCtrRef1}>
                 <span
                   className="ani-txt-1 a1 emp-txt playfair"
-                  ref={aniCtr1Ref}
+                  ref={aniCtr1Ref1}
                 >
                   Technology
                 </span>
                 <span
                   className="ani-txt-2 xyz emp-txt playfair"
-                  ref={aniCtr2Ref}
+                  ref={aniCtr2Ref1}
                 >
                   Technology
                 </span>
@@ -64,16 +100,16 @@ function Hero() {
             </span>
             and{" "}
             <span className="ani-txt-ctr">
-              <span className="ani-ctr" ref={aniCtrRef}>
+              <span className="ani-ctr" ref={aniCtrRef2}>
                 <span
                   className="ani-txt-1 a1 emp-txt playfair"
-                  ref={aniCtr1Ref}
+                  ref={aniCtr1Ref2}
                 >
                   Brands
                 </span>
                 <span
                   className="ani-txt-2 xyz emp-txt playfair"
-                  ref={aniCtr2Ref}
+                  ref={aniCtr2Ref2}
                 >
                   Brands
                 </span>
@@ -84,13 +120,19 @@ function Hero() {
         <div className="social">
           <ul>
             <li>
-              <a href="#">ig</a>
+              <a href="#">
+                <img src={insta} alt="ig" />
+              </a>
             </li>
             <li>
-              <a href="#">fb</a>
+              <a href="#">
+                <img src={facebook} alt="ig" />
+              </a>
             </li>
             <li>
-              <a href="#">in</a>
+              <a href="#">
+                <img src={linkedIn} alt="ig" />
+              </a>
             </li>
           </ul>
         </div>

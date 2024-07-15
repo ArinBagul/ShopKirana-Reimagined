@@ -1,10 +1,35 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../styles/Navbar.css";
 
 function Navbar() {
+  const navbarRef = useRef(null);
+
+  useEffect(() => {
+    const navbar = navbarRef.current;
+
+    const handleScroll = () => {
+      const y = window.scrollY;
+      console.log(y);
+      if (y > 50) {
+        navbar.classList.add("nav-active");
+        console.log("in if block");
+      } else {
+        navbar.classList.remove("nav-active");
+        console.log("in else block");
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="navbar">
-      <nav className="nav-active">
+      <nav ref={navbarRef}>
         <a href="#" className="logo poppins-black">
           <span className="emp-txt">Shop</span>Kirana
         </a>

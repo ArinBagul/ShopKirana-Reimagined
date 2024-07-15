@@ -1,0 +1,75 @@
+#growing-exp{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.vom-card{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    top: 3rem;
+    right: 3rem;
+    background-color: var(--dark);
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.vom-card a{
+    font-size: 18px;
+    color: var(--bg-light);
+}
+.map-icon-ctr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.aos-container{
+    transform: translateX(20%);
+    font-size: 236px;
+    font-weight: 900;
+    white-space: nowrap;
+    /* background-color: red; */
+}
+.aos-txt{
+    line-height: 1;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.aos-txt-p-one{
+    color: var(--primary);
+}
+.aos-txt-p-two{
+    color: var(--dark);
+}
+.exp-bullet-container{
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-top: 50px; */
+}
+.exp-bullet-container ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    color: var(--bg-light);
+    font-size: 14px;
+}
+.exp-bullet-container ul li{
+    padding: 5px 18px;
+    background-color: var(--dark);
+    border-radius: 10px;
+}

@@ -11,16 +11,20 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--dark);
 }
 
 .nav-active {
-  background-color: var(--bg-light);
-  box-shadow: 0 2px 5px #2b292925;
+  /* background-color: var(--bg-light);
+  box-shadow: 0 2px 5px #2b292925; */
+  background-color: #f4f4f4b8;
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease;
 }
 
 .nav-links {
@@ -31,7 +35,7 @@ nav {
 
 .nav-links li a {
   color: var(--dark);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   position: relative;
   transition: color 0.5s ease;
