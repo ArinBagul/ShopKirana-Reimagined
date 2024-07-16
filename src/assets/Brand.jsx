@@ -15,7 +15,7 @@ function Brand() {
         fill="url(#paint0_linear_153_169)"
         stroke="#2B2929"
         // stroke="none"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <defs>
         <linearGradient
@@ -26,8 +26,8 @@ function Brand() {
           y2="64.6402"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00DBE4" />
-          <stop offset="1" stop-color="#009096" />
+          <stop stopColor="#00DBE4" />
+          <stop offset="1" stopColor="#009096" />
         </linearGradient>
       </defs>
     </svg>

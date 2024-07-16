@@ -6,6 +6,8 @@ import Impact from "./components/Impact";
 import Map from "./components/Map";
 import GrowingExpSection from "./components/GrowingExpSection";
 import Advt from "./components/Advt";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 import "./App.css";
 
@@ -18,6 +20,8 @@ function App() {
       <Map />
       <GrowingExpSection />
       <Advt />
+      <Contact />
+      <Footer />
     </>
   );
 }
