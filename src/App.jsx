@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Impact from "./components/Impact";
 import Map from "./components/Map";
 import GrowingExpSection from "./components/GrowingExpSection";
+import Advt from "./components/Advt";
 
 import "./App.css";
 
@@ -16,6 +17,7 @@ function App() {
       <Impact />
       <Map />
       <GrowingExpSection />
+      <Advt />
     </>
   );
 }
