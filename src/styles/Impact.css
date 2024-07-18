@@ -14,6 +14,8 @@
 }
 
 .environment{
+    width: 30vw;
+    height: 60vh;
     border-radius: 38px;
     background: radial-gradient(95.16% 83.02% at 50% 50%, #FFF 0%, #595959 100%);
 }

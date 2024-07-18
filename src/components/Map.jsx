@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Tilt } from "react-tilt";
 
-import Map_India from "../assets/Map_India.png";
+// import Map_India from "../assets/Map_India.png";
+import {Map_India_MP, Map_India_Chhattisgarh, Map_India_Gujarat, Map_India_Rajasthan, Map_India_Maharastra, Map_India_UP, Map_India_NoHL} from "../assets/Map_India";
 import "../styles/Map.css";
 
 export default function Map() {
@@ -16,6 +17,10 @@ export default function Map() {
     reset: true, // If the tilt effect has to be reset on exit.
     easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
   };
+
+  useEffect(()=>{
+
+  },[])
 
   return (
     <section id="map">
@@ -48,7 +53,8 @@ export default function Map() {
       </div>
       <div className="map-container">
         <Tilt options={defaultOptions}>
-          <img src={Map_India} alt="Interactive Map" />
+          {/* <img src={Map_India} alt="Interactive Map" /> */}
+          <Map_India_NoHL />
         </Tilt>
       </div>
     </section>

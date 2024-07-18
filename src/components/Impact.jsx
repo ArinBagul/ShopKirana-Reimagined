@@ -1,9 +1,8 @@
 import React from "react";
 import Heading from "./Heading";
 import ValueCard from "./ValueCard";
-import ThreeD from "./ThreeD";
-
 import threeD from "../assets/threeD.png"
+import ThreeD from "./ThreeD"
 
 import "../styles/Impact.css"
 
@@ -14,7 +13,8 @@ function Impact() {
       <div className="impact-container">
         <div className="impact-col1">
             <div className="environment">
-                <img src={threeD} alt="" />
+                {/* <img src={threeD} alt="" /> */}
+                <ThreeD/>
             </div>
         </div>
         <div className="impact-col2">

@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import Spline from "@splinetool/react-spline";
 
 function ThreeD() {
   return (
-    <div>ThreeD</div>
-  )
+    <Spline scene="https://prod.spline.design/bx921hJfdkR0JkIL/scene.splinecode" />
+  );
 }
 
-export default ThreeD
+export default ThreeD;
