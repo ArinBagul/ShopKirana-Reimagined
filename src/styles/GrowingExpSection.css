@@ -36,9 +36,9 @@
 
 .aos-container{
     display: flex;
-    margin: 0 3rem;
+    padding: 0 3rem;
     position: relative;
-    /* transform: translateX(20%); */
+    transform: translateX(20%);
     /* font-size: 120px; */
     white-space: nowrap;
     /* background-color: lightgreen; */

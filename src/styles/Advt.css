@@ -60,6 +60,7 @@
     color: var(--dark);
 }
 .ad-cta{
+    box-shadow: inset 0px 1px 1.2px #f4f4f4a8, 0px 2px 3px #2b2929a3;
     color: var(--bg-light);
     background-color: var(--dark);
     padding: 10px 34px;

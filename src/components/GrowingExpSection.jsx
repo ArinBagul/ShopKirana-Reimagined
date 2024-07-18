@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/GrowingExpSection.css";
 
 import mapIcon from "../assets/mapIcon.svg";
@@ -6,8 +6,29 @@ import Brand from "../assets/Brand";
 import Relax from "../assets/Relax";
 import BottomCloud from "../assets/BottomCloud";
 import TopCloud from "../assets/TopCloud";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
+gsap.registerPlugin(useGSAP,ScrollTrigger);
 
 function GrowingExpSection() {
+  useGSAP(()=>{
+    gsap.to(".aos-container",{
+      transform: "translateX(-250%)",
+      scrollTrigger: {
+        trigger:"#growing-exp",
+        scroller: "body",
+        // markers: true,
+        start: "top 0%",
+        end: "top -200%",
+        scrub: 2,
+        pin: true,
+      }
+    })
+  })
   return (
     <section id="growing-exp">
       <div className="vom-card">
