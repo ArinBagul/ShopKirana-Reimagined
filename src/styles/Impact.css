@@ -1,27 +1,69 @@
-#impact{
+#impact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 3rem;
-}
-
-.impact-container{
+  }
+  
+  .impact-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: 54px 0;
-}
-
-.environment{
-    width: 30vw;
+    align-items: start;
+  }
+  
+  .impact-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 0 1rem; /* Optional: add some margin between columns */
+  }
+  
+  .environment {
+    width: 100%;
     height: 60vh;
     border-radius: 38px;
     background: radial-gradient(95.16% 83.02% at 50% 50%, #FFF 0%, #595959 100%);
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.impact-col2{
+  .impact-col3{
+    height: 60vh;
+  }
+  
+  .impact-col3 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 38px;
+    object-fit: cover;
+  }
+  
+  .impact-col2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+    height: 60vh; /* Ensures the same height as .environment */
+  }
+  
+  /* Optional: To handle small screens */
+  @media (max-width: 768px) {
+    .impact-container {
+      flex-direction: column;
+    }
+  
+    .impact-col {
+      width: 100%;
+      margin-bottom: 20px; /* Space between rows */
+    }
+  
+    .environment, .impact-col3 img, .impact-col2 {
+      height: auto; /* Adjust height for smaller screens */
+    }
+  }
+  
