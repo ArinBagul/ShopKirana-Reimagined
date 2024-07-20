@@ -120,18 +120,18 @@ function Hero() {
         <div className="social">
           <ul>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/kisankirana" target="_blank">
                 <img src={insta} alt="ig" />
               </a>
             </li>
             <li>
-              <a href="#">
-                <img src={facebook} alt="ig" />
+              <a href="https://www.facebook.com/ShopKirana-110233949323823/" target="_blank">
+                <img src={facebook} alt="fb" />
               </a>
             </li>
             <li>
-              <a href="#">
-                <img src={linkedIn} alt="ig" />
+              <a href="https://in.linkedin.com/company/shopkirana" target="_blank">
+                <img src={linkedIn} alt="in" />
               </a>
             </li>
           </ul>

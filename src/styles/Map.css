@@ -9,7 +9,20 @@
 }
 
 .map-content {
-  margin-top: 5rem;
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.map-city-data{
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: 700;
+}
+.map-city-data span:first-child{
+  color: var(--primary);
 }
 
 .map-heading-container h2:first-child {
@@ -33,7 +46,7 @@
   font-size: 14px;
   font-weight: 200;
   max-width: 510px;
-  margin: 35px 0;
+  margin: 35px 0 0 0;
 }
 /* .map-bullets{
   margin-top: 20rem;
@@ -48,11 +61,13 @@
 .map-bullets ul li a{
   color: var(--bg-light);
   font-size: 14px;
+  
 }
 .map-bullets ul li{
   background-color: var(--primary);
   padding: 3px 18px;
   border-radius: 8px;
+  cursor: pointer;
   transition: box-shadow 0.5s ease;
 }
 .map-bullets ul li:hover{

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function Map_India_NoHL() {
   return (
@@ -1956,4 +1956,12 @@ function Map_India_UP() {
   );
 }
 
-export { Map_India_MP, Map_India_Chhattisgarh, Map_India_Gujarat, Map_India_Rajasthan, Map_India_Maharastra, Map_India_UP, Map_India_NoHL };
+export {
+  Map_India_MP,
+  Map_India_Chhattisgarh,
+  Map_India_Gujarat,
+  Map_India_Rajasthan,
+  Map_India_Maharastra,
+  Map_India_UP,
+  Map_India_NoHL,
+};
