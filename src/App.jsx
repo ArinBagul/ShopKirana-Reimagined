@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 import "./App.css";
+import Error404 from "./components/Error404";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Advt />
       <Contact />
       <Footer />
+      <Error404 />
     </>
   );
 }

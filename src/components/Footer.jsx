@@ -11,13 +11,13 @@ function Footer() {
       <div className="r1">
         <div className="social-ctr">
           <span>Follow us on</span>
-          <a href="">
+          <a href="https://www.instagram.com/kisankirana" target="_blank">
             <Insta />
           </a>
-          <a href="">
+          <a href="https://in.linkedin.com/company/shopkirana" target="_blank">
             <Facebook />
           </a>
-          <a href="">
+          <a href="https://www.facebook.com/ShopKirana-110233949323823/" target="_blank">
             <Linkedin />
           </a>
         </div>
@@ -33,13 +33,13 @@ function Footer() {
           <span className="f-head">Company</span>
           <ul>
             <li>
-              <a href="">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
               <a href="">About us</a>
             </li>
             <li>
-              <a href="">Contact us</a>
+              <a href="#contact-section">Contact us</a>
             </li>
             <li>
               <a href="">Careers</a>

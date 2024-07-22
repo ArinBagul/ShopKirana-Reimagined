@@ -26,7 +26,7 @@ function Advt() {
               <span>Our leading partner </span>
               <span className="playfair">Arthmate</span>
             </div>
-            <a href="#" className="ad-cta">
+            <a href="https://www.arthmate.com/" target="_blank" className="ad-cta">
               Visit Now <img src={cta_arrow} alt="cta" />
             </a>
           </div>

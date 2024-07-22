@@ -141,3 +141,16 @@ li {
   --light-grey: #595959;
   --primary: #e54421;
 }
+
+#error-404{
+  display: none;
+}
+
+@media (max-width:1000px) {
+  #hero,#ad-section,#contact-section,#footer-section,#impact,#map,#growing-exp,.navbar{
+    display: none;
+  }
+  #error-404{
+    display: block;
+  }
+}

@@ -41,7 +41,7 @@ function Contact() {
             </button>
           </form>
         </div>
-        <a href="#" className="map-cta">
+        <a href="https://maps.app.goo.gl/ULR6g4awrHaeE3Qg9" target="_blank" className="map-cta">
           look at Google Maps
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ function Contact() {
             />
           </svg>
         </a>
-        <a href="#" className="address-batch">
+        <a href="https://maps.app.goo.gl/ULR6g4awrHaeE3Qg9" target="_blank" className="address-batch">
           1501, 15th Floor, SKYE Corporate Park, Plot No 25, Scheme No 78, Part
           II, Sector B Indore 452010
         </a>
@@ -253,7 +253,7 @@ function Contact() {
         <div className="contact-details">
           <span>Contact us</span>
           <div className="contact-batch-grp">
-            <a href="#" className="contact-info-batch">
+            <a href="mailto:info@shopkirana.com" className="contact-info-batch">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -268,7 +268,7 @@ function Contact() {
               </svg>
               info@shopkirana.com
             </a>
-            <a href="#" className="contact-info-batch">
+            <a href="tel:+91-782-811-2112" className="contact-info-batch">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"

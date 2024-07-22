@@ -32,7 +32,7 @@ function GrowingExpSection() {
   return (
     <section id="growing-exp">
       <div className="vom-card">
-        <a href="#">View Map</a>
+        <a href="#map">View Map</a>
         <div className="map-icon-ctr">
           <img src={mapIcon} alt="map icon" />
         </div>
