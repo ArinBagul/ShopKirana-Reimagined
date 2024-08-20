@@ -1,157 +1,59 @@
-import React, { useEffect, useRef } from "react";
 import "../styles/Hero.css";
-
-import heroImage from "../assets/heroImage.png";
-
-import insta from "../assets/insta.svg";
-import facebook from "../assets/facebook.svg";
-import linkedIn from "../assets/linkedIn.svg";
+import heroImage from "../assets/videos/videorelay.webp";
 
 function Hero() {
-  const aniCtrRef1 = useRef(null);
-  const aniCtr1Ref1 = useRef(null);
-  const aniCtr2Ref1 = useRef(null);
-
-  const aniCtrRef2 = useRef(null);
-  const aniCtr1Ref2 = useRef(null);
-  const aniCtr2Ref2 = useRef(null);
-
-  useEffect(() => {
-    const aniCtr1 = aniCtrRef1.current;
-    const aniCtr1_1 = aniCtr1Ref1.current;
-    const aniCtr2_1 = aniCtr2Ref1.current;
-
-    const aniCtr2 = aniCtrRef2.current;
-    const aniCtr1_2 = aniCtr1Ref2.current;
-    const aniCtr2_2 = aniCtr2Ref2.current;
-
-    const handleMouseEnter1 = () => {
-      aniCtr1_1.classList.remove("a1");
-      aniCtr1_1.classList.add("abc");
-      aniCtr2_1.classList.remove("xyz");
-      aniCtr2_1.classList.add("a1");
-    };
-
-    const handleMouseLeave1 = () => {
-      aniCtr2_1.classList.remove("a1");
-      aniCtr2_1.classList.add("xyz");
-      aniCtr1_1.classList.remove("abc");
-      aniCtr1_1.classList.add("a1");
-    };
-
-    const handleMouseEnter2 = () => {
-      aniCtr1_2.classList.remove("a1");
-      aniCtr1_2.classList.add("abc");
-      aniCtr2_2.classList.remove("xyz");
-      aniCtr2_2.classList.add("a1");
-    };
-
-    const handleMouseLeave2 = () => {
-      aniCtr2_2.classList.remove("a1");
-      aniCtr2_2.classList.add("xyz");
-      aniCtr1_2.classList.remove("abc");
-      aniCtr1_2.classList.add("a1");
-    };
-
-    if (aniCtr1) {
-      aniCtr1.addEventListener("mouseenter", handleMouseEnter1);
-      aniCtr1.addEventListener("mouseleave", handleMouseLeave1);
-    }
-
-    if (aniCtr2) {
-      aniCtr2.addEventListener("mouseenter", handleMouseEnter2);
-      aniCtr2.addEventListener("mouseleave", handleMouseLeave2);
-    }
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      if (aniCtr1) {
-        aniCtr1.removeEventListener("mouseenter", handleMouseEnter1);
-        aniCtr1.removeEventListener("mouseleave", handleMouseLeave1);
-      }
-      if (aniCtr2) {
-        aniCtr2.removeEventListener("mouseenter", handleMouseEnter2);
-        aniCtr2.removeEventListener("mouseleave", handleMouseLeave2);
-      }
-    };
-  }, []);
-
   return (
     <section id="hero">
-      <div className="hero-container">
-        <div className="text-ctr">
-          <h1>Empowering Retailers with</h1>
-          <h1>
-            <span className="ani-txt-ctr">
-              <span className="ani-ctr" ref={aniCtrRef1}>
-                <span
-                  className="ani-txt-1 a1 emp-txt playfair"
-                  ref={aniCtr1Ref1}
-                >
-                  Technology
-                </span>
-                <span
-                  className="ani-txt-2 xyz emp-txt playfair"
-                  ref={aniCtr2Ref1}
-                >
-                  Technology
-                </span>
-              </span>
-            </span>
-            and{" "}
-            <span className="ani-txt-ctr">
-              <span className="ani-ctr" ref={aniCtrRef2}>
-                <span
-                  className="ani-txt-1 a1 emp-txt playfair"
-                  ref={aniCtr1Ref2}
-                >
-                  Brands
-                </span>
-                <span
-                  className="ani-txt-2 xyz emp-txt playfair"
-                  ref={aniCtr2Ref2}
-                >
-                  Brands
-                </span>
-              </span>
-            </span>
-          </h1>
+      <div className="hero-ctr-top">
+        <div className="h-c1">
+          <div className="hero-txt">
+            <h1>Empowering</h1>
+            <h1>Retailers with</h1>
+            <h1>
+              <span className="h-emph-txt">Technology</span>
+            </h1>
+            <h1>
+              and <span className="h-emph-txt">Brands</span>
+            </h1>
+          </div>
         </div>
-        <div className="social">
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/kisankirana" target="_blank">
-                <img src={insta} alt="ig" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/ShopKirana-110233949323823/" target="_blank">
-                <img src={facebook} alt="fb" />
-              </a>
-            </li>
-            <li>
-              <a href="https://in.linkedin.com/company/shopkirana" target="_blank">
-                <img src={linkedIn} alt="in" />
-              </a>
-            </li>
-          </ul>
+        <div className="h-c2">
+          <div className="h-vid-ctr">
+            <img src={heroImage} alt="Loading..." />
+          </div>
         </div>
       </div>
-      <div className="hero-bottom">
-        <div className="hero-image">
-          <img src={heroImage} alt="Hero Image" />
+      <div className="hero-ctr-bottom">
+        <div className="ht-c1">
+          <div className="social">
+            <a href="#">
+              <i className="fi fi-brands-instagram"></i>
+            </a>
+            <a href="#">
+              <i className="fi fi-brands-facebook"></i>
+            </a>
+            <a href="#">
+              <i className="fi fi-brands-twitter"></i>
+            </a>
+          </div>
+
+          <div className="hero-cta">
+            <a href="#" className="p-btn">
+              Connect with us
+            </a>
+            <a href="#" className="s-btn">
+              Explore more
+            </a>
+          </div>
         </div>
-        <div className="hero-btm-heading">
-          <h2>
-            <span className="emp-head-bullet">Schedule</span>{" "}
-            <span className="playfair">a meeting</span>
-          </h2>
-        </div>
-        <div className="form-container">
-          <input type="text" placeholder="Name" id="name-in" />
-          <input type="text" placeholder="Email address" id="email-in" />
-          <input type="text" placeholder="dd/mm/yyyy" id="date-in" />
-          <button type="submit">Book Now</button>
+        <div className="ht-c2">
+          <div className="ht-txt-ctr">
+            <h1>Start your</h1>
+            <h1>
+              <em>Business</em> from
+            </h1>
+            <h1>Anywhere</h1>
+          </div>
         </div>
       </div>
     </section>

@@ -1,0 +1,10 @@
+.bottom-line {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 5px;
+    background: linear-gradient(180deg, #ff9e88 10%, #E54421);
+    transition: width 0.5s ease; /* Smooth transition for width */
+  }
+  

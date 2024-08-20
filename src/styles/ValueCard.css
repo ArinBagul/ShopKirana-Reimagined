@@ -1,30 +1,42 @@
-.val-card-cont{
-    display: flex;
-    gap: 25px;
-    color: var(--bg-light);
-    background-color: var(--dark);
-    padding: 20px 24px;
-    border-radius: 28px;
-    align-items: center;
+.val-card-cont {
+  display: flex;
+  gap: 25px;
+  color: var(--bg-light);
+  background-color: var(--dark);
+  padding: 20px 24px;
+  border-radius: 28px;
+  align-items: center;
+  box-shadow: 0px 4px 8px 0px rgba(43, 41, 41, 0.5),
+    inset 1px 1px 8px 0px rgba(244, 244, 244, 0.6);
 }
 
-.card-val{
-    cursor:default;
-    background-color: var(--primary);
-    font-size: 52px;
-    font-weight: 700;
-    
-    padding: 0 16px;
-    display: flex;
-    border-radius: 16px;
-    transition: box-shadow 0.5s cubic-bezier(0.56, -0.53, 0.2, 0.98);
-    /* box-shadow: 0px 4px 20px 0px rgba(255, 64, 38, 0.70); */
+.card-val {
+  cursor: default;
+  background-color: var(--primary);
+  font-size: 52px;
+  font-weight: 700;
+
+  padding: 0 16px;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(1px 1px 1px var(--primary));
+  box-shadow: inset 0px -7px 14px 0px rgba(255, 181, 165, 0.5),
+    0px 5px 15px 0px rgba(255, 97, 63, 0.4),
+    0px 12px 40px 0px rgba(255, 115, 84, 0.3);
+
+  transition: all 300ms ease;
 }
-.card-val:hover{
-    box-shadow: 0px 4px 20px 0px rgba(255, 64, 38, 0.70);
+.card-val:hover {
+  box-shadow: inset 0px 0px 14px 0px rgba(255, 181, 165, 0.6),
+    0px 5px 15px 0px rgba(255, 97, 63, 0.4),
+    0px 0px 0px 0px rgba(255, 115, 84, 0.3);
+  transform: translateY(1px);
 }
 
-.card-content{
-    font-size: 28px;
-    line-height: 1.2;
+.card-content {
+  font-size: 28px;
+  line-height: 1.2;
 }
