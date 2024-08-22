@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 50px;
+  margin-bottom: 4rem;
 }
 .hero-ctr-top {
   display: flex;
@@ -20,7 +21,6 @@
   padding: 0 7rem;
 }
 .ht-txt-ctr {
-  
   text-align: right;
   background: linear-gradient(90deg, #2b2929 48.28%, #a99b9b 99.86%);
   background-clip: text;
@@ -33,7 +33,7 @@
   line-height: 1.2;
   font-weight: var(--fw-black);
 }
-.ht-txt-ctr em{
+.ht-txt-ctr em {
   font-family: var(--playfair);
 }
 .hero-txt h1 {
@@ -56,7 +56,7 @@
   -webkit-text-fill-color: transparent;
   transition: all 500ms ease-in-out;
 }
-.h-emph-txt:hover{
+.h-emph-txt:hover {
   background-position: 50% 100%;
 }
 .h-emph-txt::before {
@@ -175,4 +175,151 @@
 .s-btn:hover {
   background: var(--dark);
   color: var(--bg-light);
+}
+
+@media (max-width: 1340px) {
+  .hero-ctr-top {
+    padding: 0 2rem;
+    padding-top: 3rem;
+  }
+  .hero-txt h1 {
+    font-size: 42px;
+  }
+  .h-emph-txt {
+    font-size: 54px;
+  }
+  .h-emph-txt::before {
+    bottom: 14px;
+    height: 7px;
+  }
+  .h-vid-ctr img {
+    width: 500px;
+  }
+  .hero-ctr-bottom {
+    padding: 0 2rem;
+    align-items: flex-end; /* change this to change the alignment of hero buttons */
+  }
+  .ht-txt-ctr h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 900px) {
+  .hero-ctr-top {
+    padding: 0 2rem;
+    padding-top: 3rem;
+    justify-content: space-between;
+  }
+  .hero-txt h1 {
+    font-size: 32px;
+  }
+  .h-emph-txt {
+    font-size: 45px;
+  }
+  .h-emph-txt::before {
+    bottom: 12px;
+    height: 7px;
+  }
+  .h-vid-ctr img {
+    width: 350px;
+  }
+  .hero-ctr-bottom {
+    padding: 0 2rem;
+    align-items: flex-end; /* change this to change the alignment of hero buttons */
+  }
+  .social {
+    font-size: 16px;
+  }
+  .p-btn {
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+  .s-btn {
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+  .ht-txt-ctr h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 760px) {
+  #hero {
+    justify-content: normal;
+    padding: 4rem 0;
+    gap: 30px;
+  }
+  .hero-ctr-top {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px;
+    padding-top: 2rem;
+  }
+  .hero-txt h1 {
+    font-size: 32px;
+  }
+  .h-emph-txt {
+    font-size: 45px;
+  }
+  .h-emph-txt::before {
+    bottom: 12px;
+    height: 7px;
+  }
+  .h-vid-ctr img {
+    width: 350px;
+  }
+  .hero-ctr-bottom {
+    flex-direction: column-reverse;
+    padding: 0 10px;
+    align-items: center; /* change this to change the alignment of hero buttons */
+    gap: 24px;
+  }
+  .social {
+    font-size: 16px;
+    justify-content: center;
+  }
+  .p-btn {
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+  .s-btn {
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+  .ht-txt-ctr h1 {
+    text-align: center;
+    font-size: 42px;
+  }
+  .hero-cta {
+    margin: 50px 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .h-vid-ctr img {
+    width: 320px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-txt h1{
+    line-height: 1.1;
+  }
+  .h-emph-txt {
+    font-size: 40px;
+  }
+  .h-emph-txt::before{
+    bottom: 10px;
+  }
+  .h-vid-ctr img {
+    width: 300px;
+  }
+  .hero-cta a{
+    gap: 20px;
+    font-size: 12px;
+  }
+  .p-btn{
+    padding: 8px 16px;
+  }
+  .s-btn{
+    padding: 8px 16px;
+  }
 }
