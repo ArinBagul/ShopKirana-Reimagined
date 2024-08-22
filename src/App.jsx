@@ -9,7 +9,7 @@ import Advt from "./components/Advt";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-// import BottomFX from "./components/BottomFX";
+import BottomFX from "./components/BottomFX";
 
 import "./App.css";
 import Error404 from "./components/Error404";
@@ -25,8 +25,8 @@ function App() {
       <Advt />
       <Contact />
       <Footer />
-      {/* <BottomFX /> */}
       <Error404 />
+      <BottomFX />
     </>
   );
 }
