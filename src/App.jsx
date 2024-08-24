@@ -22,10 +22,10 @@ function App() {
       <Impact />
       <Map />
       <GrowingExpSection />
-      <Advt />
+      {/* <Advt />
       <Contact />
-      <Footer />
-      <Error404 />
+      <Footer /> */}
+      {/* <Error404 /> */}
       <BottomFX />
     </>
   );

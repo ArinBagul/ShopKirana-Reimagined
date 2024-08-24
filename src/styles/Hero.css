@@ -1,18 +1,18 @@
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 50px;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 .hero-ctr-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 7rem;
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 .hero-ctr-bottom {
   display: flex;
@@ -204,6 +204,7 @@
   }
 }
 @media (max-width: 900px) {
+
   .hero-ctr-top {
     padding: 0 2rem;
     padding-top: 3rem;
