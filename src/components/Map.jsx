@@ -57,6 +57,11 @@ export default function Map() {
 
       setCitiesVal("RJ: 2");
       setStoresVal("6,000");
+      setTimeout(()=>{
+        setCitiesVal("IND: 30");
+        setStoresVal("100,000");
+        setRjMap(false)
+      },1000)
     });
     gj.addEventListener("mouseenter", () => {
       setRjMap(false);
@@ -68,6 +73,12 @@ export default function Map() {
 
       setCitiesVal("GJ: 3");
       setStoresVal("9,000");
+
+      setTimeout(()=>{
+        setCitiesVal("IND: 30");
+        setStoresVal("100,000");
+        setGjMap(false)
+      },1000)
     });
     mh.addEventListener("mouseenter", () => {
       setRjMap(false);
@@ -79,6 +90,12 @@ export default function Map() {
 
       setCitiesVal("MH: 3");
       setStoresVal("9,000");
+
+      setTimeout(()=>{
+        setCitiesVal("IND: 30");
+        setStoresVal("100,000");
+        setMhMap(false)
+      },1000)
     });
     cg.addEventListener("mouseenter", () => {
       setRjMap(false);
@@ -90,6 +107,12 @@ export default function Map() {
 
       setCitiesVal("CG: 1");
       setStoresVal("3,000");
+
+      setTimeout(()=>{
+        setCitiesVal("IND: 30");
+        setStoresVal("100,000");
+        setCgMap(false)
+      },1000)
     });
     up.addEventListener("mouseenter", () => {
       setRjMap(false);
@@ -101,6 +124,12 @@ export default function Map() {
 
       setCitiesVal("UP: 2");
       setStoresVal("6,000");
+
+      setTimeout(()=>{
+        setCitiesVal("IND: 30");
+        setStoresVal("100,000");
+        setUpMap(false)
+      },1000)
     });
     mp.addEventListener("mouseenter", () => {
       setRjMap(false);
@@ -112,6 +141,12 @@ export default function Map() {
 
       setCitiesVal("MP: 3");
       setStoresVal("9,000");
+
+      setTimeout(()=>{
+        setCitiesVal("IND: 30");
+        setStoresVal("100,000");
+        setMpMap(false)
+      },1000)
     });
   }, []);
 

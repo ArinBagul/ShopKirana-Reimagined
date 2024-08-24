@@ -15,15 +15,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP,ScrollTrigger);
 
 function GrowingExpSection() {
+  const isMobile = window.innerWidth <= 768;
+
   useGSAP(()=>{
     gsap.to(".aos-container",{
-      transform: "translateX(-250%)",
+      transform: isMobile ? "translateX(-100%)" : "translateX(-80%)",
       scrollTrigger: {
         trigger:"#growing-exp",
         scroller: "body",
         // markers: true,
         start: "top 0%",
-        end: "top -200%",
+        end: "top -300%",
         scrub: 2,
         pin: true,
       }
