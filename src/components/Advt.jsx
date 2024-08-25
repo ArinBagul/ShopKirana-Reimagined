@@ -8,7 +8,7 @@ function Advt() {
     <section id="ad-section">
       <div className="ad-ctr">
         <div className="clr-plate">
-          <div className="c1">
+          <div className="c1 ad-content-ctr">
             <div className="ad-head">
               <span>For Loan</span>
               <span>Application Complaints</span>
@@ -16,7 +16,7 @@ function Advt() {
             <div className="ad-body">
               <p>
                 If you have any complaints related to your loan application,
-                whether pre or post<br></br> disbursement, please contact our Grievance
+                whether pre or post disbursement, please contact our Grievance
                 Redressal Officer at Arthmate for assistance.
               </p>
             </div>

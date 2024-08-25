@@ -24,7 +24,7 @@
     padding: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     transition: all 500ms ease-in-out;
 }
 .clr-plate:hover{
@@ -38,6 +38,10 @@
     to{
         background: linear-gradient(240deg, rgba(255, 255, 255, 0.00) 30%, rgba(255, 255, 255, 0.42) 40%, rgba(255, 255, 255, 0.00) 52%), #FFB72C;
     }
+}
+
+.ad-content-ctr{
+    max-width: 630px;
 }
 
 .ad-head{
@@ -84,4 +88,46 @@
 }
 .ad-cta:hover{
     background-color: #151515;
+}
+
+@media (max-width: 1024px) {
+    .clr-plate{
+        gap: 30px;
+    }
+    .ad-content-ctr{
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 750px) {
+    #ad-section{
+        padding: 60px 0;
+    }
+    .ad-ctr{
+        margin: 0 20px;
+    }
+    .clr-plate{
+        flex-direction: column;
+        padding: 32px 22px;
+    }
+    .clr-plate .c2{
+        align-items: center;
+        gap: 10px;
+    }
+    .ad-head{
+        font-size: 18px;
+    }
+    .ad-body p{
+        font-size: 12px;
+    }
+    .sponsor-content span:nth-child(1){
+        font-size: 12px;
+    }
+    .sponsor-content span:nth-child(2){
+        font-size: 18px;
+    }
+    .ad-cta{
+        font-size: 14px;
+    }
+
 }

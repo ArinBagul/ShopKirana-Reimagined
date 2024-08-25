@@ -35,9 +35,29 @@ function Navbar() {
     }
   }, [isMenuActive]);
 
+  useEffect(() => {
+    const navBar = document.getElementById("navbar");
+    const windowHeight = window.innerHeight;
+    const handleScroll = () => {
+      let scrollPosition = window.scrollY; // Get the current scroll position
+      if ((scrollPosition + 100) > windowHeight) {
+        navBar.classList.remove("transparent-nav")
+      }
+      else{
+        navBar.classList.add("transparent-nav")
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    // Cleanup the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <nav>
-      <div className="navbar" id="navbar">
+      <div className="navbar transparent-nav" id="navbar">
         <div className="shop-kirana-logo">
           <a href="#"><span>Shop.</span>Kirana</a>
         </div>

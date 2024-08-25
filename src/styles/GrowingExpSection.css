@@ -156,7 +156,7 @@
   display: flex;
   align-items: center;
   /* background-color: #00BEC6; */
-  width: 57rem;
+  width: 60rem;
 }
 .aos-p3-batch-1 {
   font-weight: 900;
@@ -276,6 +276,6 @@
     font-size: 70px;
   }
   .p3-batches{
-    width: 52rem;
+    width: 55rem;
   }
 }

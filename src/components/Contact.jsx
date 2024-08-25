@@ -20,7 +20,7 @@ function Contact() {
   return (
     <section id="contact-section">
       <div className="contact-container">
-        <div className="map"></div>
+        {/* <div className="map"></div> */}
         <div className="contact-card">
           <div className="contact-head-ctr">
             <div className="contact-head">
@@ -60,7 +60,7 @@ function Contact() {
           1501, 15th Floor, SKYE Corporate Park, Plot No 25, Scheme No 78, Part
           II, Sector B Indore 452010
         </a>
-        <div className="area">
+        {/* <div className="area">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="110"
@@ -136,9 +136,9 @@ function Contact() {
               </filter>
             </defs>
           </svg>
-        </div>
+        </div> */}
 
-        <div className="address-pointer">
+        {/* <div className="address-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="70"
@@ -248,7 +248,7 @@ function Contact() {
               </filter>
             </defs>
           </svg>
-        </div>
+        </div> */}
 
         <div className="contact-details">
           <span>Contact us</span>

@@ -21,6 +21,7 @@ nav {
   box-shadow: 0px 2px 6px 0px rgba(43, 41, 41, 0.2);
 }
 .shop-kirana-logo {
+  width: 200px;
   font-size: 20px;
   font-weight: var(--fw-bold);
   margin-left: 10px;
@@ -38,6 +39,7 @@ nav {
   align-items: center;
   gap: 30px;
   font-weight: var(--fw-semibold);
+  font-size: 14px;
 }
 .nav-link-list li a {
   color: var(--dark);
@@ -110,8 +112,30 @@ a.mobile-nav-btn{
   margin: 10px;
 }
 
+.transparent-nav{
+  background: rgba(43, 41, 41, 0.01);
+  box-shadow: none;
+  color: var(--bg-light);
+}
+.transparent-nav .shop-kirana-logo span{
+  color: var(--bg-light);
+}
+.transparent-nav .nav-link-list li a{
+  color: var(--bg-light);
+}
+.transparent-nav .nav-link-list li a:hover {
+  color: var(--primary);
+}
+/* .nav-link-list.active-menu li a{
+  color: var(--dark);
+} */
+.nav-link-list li a.active-nav-link{
+  color: var(--primary);
+}
+
 @media (max-width: 920px) {
   .shop-kirana-logo {
+    width: fit-content;
     font-size: 18px;
   }
   .menu-btn{
@@ -156,6 +180,10 @@ a.mobile-nav-btn{
     text-align: center;
     padding-bottom: 10px;
   } */
+
+  .transparent-nav .nav-link-list{
+    background: rgba(43, 41, 41, 0.8);
+  }
 
   .active-menu{
     display: flex;
