@@ -23,8 +23,8 @@ function App() {
       <Map />
       <GrowingExpSection />
       <Advt />
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Contact />
+      <Footer />
       {/* <Error404 /> */}
       {/* <BottomFX /> */}
     </>

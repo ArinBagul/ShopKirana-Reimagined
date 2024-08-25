@@ -1,9 +1,10 @@
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "../styles/Hero.css";
 
 function Hero() {
   return (
     <section id="hero">
-
+      
       <div className="hero-bg-ctr">
 
         <div className="hero-heading">
@@ -17,18 +18,18 @@ function Hero() {
 
         <div className="hero-cta-ctr">
 
-          <div className="social-ctr">
+          <div className="hero-social-ctr">
             <span>Connect with us</span>
-            <div className="social">
-              <a href="#"><i className="fi fi-brands-instagram"></i></a>
-              <a href="#"><i className="fi fi-brands-facebook"></i></a>
-              <a href="#"><i className="fi fi-brands-twitter"></i></a>
+            <div className="hero-social">
+              <a href="https://www.instagram.com/kisankirana"><i className="bi bi-instagram" /></a>
+              <a href="https://in.linkedin.com/company/shopkirana"><i className="bi bi-facebook" /></a>
+              <a href="https://www.facebook.com/ShopKirana-110233949323823/"><i className="bi bi-linkedin" /></a>
             </div>
           </div>
 
           <div className="hero-cta">
-            <a href="#" className="p-btn">Get Started</a>
-            <a href="#" className="s-btn">Explore More</a>
+            <a href="#contact-section" className="p-btn">Get Started</a>
+            <a href="#impact" className="s-btn">Explore More</a>
           </div>
 
         </div>
