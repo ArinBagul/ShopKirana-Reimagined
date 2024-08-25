@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import { isMobile } from "react-device-detect";
-import Tilt from 'react-parallax-tilt';
+
+// import Tilt from 'react-parallax-tilt';
 
 import "../styles/Contact.css";
 
@@ -40,14 +41,6 @@ function Contact() {
 
   return (
     <section id="contact-section">
-      <Tilt
-            className="tilt-background"
-            tiltMaxAngleX={5}
-            tiltMaxAngleY={5}
-            perspective={5000}
-            transitionSpeed={10000}
-            gyroscope={true} // Enable gyroscope support for mobile devices
-        >
       <div className="contact-container">
         <ContactCard />
 
@@ -84,7 +77,7 @@ function Contact() {
             />
           </div>
         </div>
-      </div></Tilt>
+      </div>
     </section>
   );
 }
