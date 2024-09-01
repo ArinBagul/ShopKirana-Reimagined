@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Navbar.css";
-import { Link } from "react-router-dom";
 
-function Navbar() {
+function NavbarL() {
   const [isMenuActive, setIsMenuActive] = useState(false);
 
   useEffect(() => {
@@ -23,7 +22,7 @@ function Navbar() {
       closeBtn.removeEventListener("click", handleMenuToggle);
     };
   }, []);
-
+  
   useEffect(() => {
     const navBar = document.getElementById("navbar");
 
@@ -35,26 +34,6 @@ function Navbar() {
       navBar.style.webkitBackdropFilter = "none";
     }
   }, [isMenuActive]);
-
-  useEffect(()=>{
-    const navBar = document.getElementById("navbar");
-    const heroSection = document.getElementById("hero");
-
-    const heroSectionObserver = new IntersectionObserver(function(
-      entries,
-      heroSectionObserver
-    ) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          navBar.classList.add("transparent-nav");
-        } else {
-          navBar.classList.remove("transparent-nav");
-        }
-      });
-    });
-    
-    heroSectionObserver.observe(heroSection);
-  },[])
 
   return (
     <nav>
@@ -71,14 +50,15 @@ function Navbar() {
           >
             <i className="fi fi-rr-cross-small"></i>Close
           </button>
-          <li><a href="/" className="active-nav-link">Home</a></li>
-          <li><Link to="/careers">Careers</Link></li>
-          <li><Link to="/blog">Stories</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <Link to="/build-brand" className="nav-btn mobile-nav-btn">Let's Build Together</Link>
+          <li><a href="#" className="active-nav-link">Home</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Stories</a></li>
+          <li><a href="#">About</a></li>
+          <a href="#" className="nav-btn mobile-nav-btn">Let's Build Together</a>
         </ul>
 
-        <Link to="/build-brand" className="nav-btn big-scr-btn">Let's Build Together</Link>
+        <a href="#" className="nav-btn big-scr-btn">Let's Build Together</a>
         <button className="menu-btn" id="menu-btn" aria-label="Open Menu">
           Menu <i className="fi fi-br-menu-burger"></i>
         </button>
@@ -87,4 +67,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarL;

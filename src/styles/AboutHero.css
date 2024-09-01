@@ -1,0 +1,98 @@
+#about-hero{
+    height: 100vh;
+    width: 100%;
+}
+.about-ctr{
+    --bg-img: url("../assets/images/sk-hero-bg.png");
+    --bg-opacity: 10%;
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    gap: 30px;
+}
+.about-ctr::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: var(--bg-opacity);
+    background: var(--bg-img);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-heading{
+    width: 100%;
+    line-height: 1.2;
+}
+.a-h-t, .a-h-t span{
+    font-family: var(--playfair);
+    font-weight: var(--fw-bold);
+    font-style: italic;
+    font-size: 52px;
+}
+.a-h-t span{
+    color: var(--primary);
+}
+.a-h-b{
+    font-size: 52px;
+    color: var(--light-grey);
+    font-weight: var(--fw-light);
+}
+.about-content p{
+    font-size: 14px;
+    color: var(--dark);
+    font-weight: var(--fw-medium);
+    text-align: justify;
+}
+
+@media (max-width: 770px) {
+    #about-hero{
+        height: 100%;
+    }
+    .about-ctr{
+        padding: 7rem 1rem;
+    }
+    .a-h-t, .a-h-t span{
+        font-size: 42px;
+    }
+    .a-h-b{
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 480px) {
+    .a-h-t, .a-h-t span{
+        font-size: 36px;
+    }
+    .a-h-b{
+        font-size: 36px;
+    }
+    .about-content p{
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px) {
+    .a-h-t, .a-h-t span{
+        font-size: 36px;
+    }
+    .a-h-b{
+        font-size: 32px;
+    }
+}
+@media (max-width: 366px) {
+    .a-h-t, .a-h-t span{
+        font-size: 36px;
+    }
+    .a-h-b{
+        font-size: 26px;
+    }
+}

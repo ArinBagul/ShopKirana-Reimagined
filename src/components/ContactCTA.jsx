@@ -5,7 +5,7 @@ function ContactCTA(props) {
   const link = props.link;
   const icon = props.icon;
   const txt = props.txt;
-  console.log(icon)
+  // console.log(icon)
   return (
     <a href={link} className="contact-info-batch">
       {icon}

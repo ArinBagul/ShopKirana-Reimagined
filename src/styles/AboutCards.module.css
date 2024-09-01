@@ -1,0 +1,70 @@
+#aboutCards {
+  padding: 5rem;
+}
+.aboutCardsCtr {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.lac {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card {
+  max-width: 500px;
+  border-radius: 18px;
+  background: var(--dark);
+  padding: 32px; /*change this when change padding*/
+}
+.cardHeading {
+  color: var(--bg-light);
+  margin-bottom: 15px;
+}
+.cardHeading h2 {
+  font-size: 28px;
+  font-weight: var(--fw-semibold);
+  font-family: var(--playfair);
+}
+.cardHeading span {
+  background: var(--primary);
+  padding: 0 10px;
+  border-radius: 7px;
+}
+.cardContent {
+  color: var(--bg-light);
+  font-size: 12px;
+}
+.cardContent ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 32px; /*change this when change padding*/
+}
+.cardContent ul li {
+  --size: 16px;
+  position: relative;
+}
+.cardContent ul li::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -30px;
+  height: var(--size);
+  width: var(--size);
+  background: url("../assets/list-style-icon/tick.svg") center/cover;
+}
+@media (max-width: 770px) {
+  #aboutCards{
+      padding: 7rem 1rem;
+  }
+}
+@media (max-width: 390px) {
+  .card {
+    padding: 32px 26px;
+  }
+  .cardContent ul {
+    margin-left: 26px;
+  }
+}

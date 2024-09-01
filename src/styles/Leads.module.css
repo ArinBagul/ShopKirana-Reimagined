@@ -1,0 +1,25 @@
+.animationCtr{
+    overflow: hidden;
+    margin: 5rem 1rem;
+}
+.animationStrip{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 60px;
+    align-items: center;
+}
+
+.animationStrip:hover.animationStrip img{
+    animation-play-state: paused;
+}
+
+.animationStrip img{
+    animation: leadsAnimation 20s linear infinite;
+}
+
+@keyframes leadsAnimation {
+    to{
+        transform: translateX(calc(-100% - 60px))
+    }
+}
