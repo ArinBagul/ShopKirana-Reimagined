@@ -48,7 +48,7 @@ nav {
 .nav-link-list li a:hover {
   color: var(--primary);
 }
-.nav-link-list li a.active-nav-link{
+.nav-link-list li a.active{
   color: var(--primary);
 }
 a.nav-btn {

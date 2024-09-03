@@ -1,0 +1,212 @@
+#brand {
+  height: 100vh;
+  width: 100%;
+  
+}
+.brandCtr {
+  --bg-img: url("../assets/images/sk-hero-bg.png");
+  --bg-opacity: 10%;
+
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-top: 150px;
+}
+.brandCtr::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: var(--bg-opacity);
+  background: var(--bg-img);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -10000;
+}
+.c1,.c2{
+    flex: 1;
+}
+.heading {
+  width: 100%;
+  line-height: 1.2;
+}
+.bht,
+.bht span {
+  font-family: var(--playfair);
+  font-weight: var(--fw-bold);
+  font-style: italic;
+  font-size: 52px;
+}
+.bht span {
+  color: var(--primary);
+}
+.bhb {
+  font-size: 36px;
+  color: var(--light-grey);
+  font-weight: var(--fw-light);
+}
+.content {
+  margin: 25px 0;
+}
+.content p {
+  font-size: 14px;
+  color: var(--dark);
+  font-weight: var(--fw-medium);
+  text-align: justify;
+}
+.btn {
+  width: fit-content;
+}
+.c2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.card {
+  /* width: 100%; */
+  border-radius: 18px;
+  border-radius: 18px;
+  background: linear-gradient(
+      300deg,
+      rgba(244, 244, 244, 0) 67.85%,
+      #f4f4f4 179.37%
+    ),
+    rgba(43, 41, 41, 0.9);
+  backdrop-filter: blur(3.5px);
+  padding: 32px; /*change this when change padding*/
+}
+.cardHeading {
+  color: var(--bg-light);
+  margin-bottom: 15px;
+}
+.cardHeading h2 {
+  font-size: 28px;
+  font-weight: var(--fw-semibold);
+  font-family: var(--playfair);
+}
+.cardHeading span {
+  background: var(--primary);
+  padding: 0 10px;
+  border-radius: 7px;
+}
+.cardContent {
+  color: var(--bg-light);
+  font-size: 12px;
+  display: flex;
+  gap: 20px;
+}
+.cardContent ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 32px; /*change this when change padding*/
+}
+.cardContent ul li {
+  --size: 16px;
+  position: relative;
+}
+.cardContent ul li::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -30px;
+  height: var(--size);
+  width: var(--size);
+  background: url("../assets/list-style-icon/tick.svg") center/cover;
+}
+
+@media (max-width: 970px) {
+    .bht,.bht span{
+        font-size: 36px;
+    }
+    .bhb{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 390px) {
+  .card {
+    padding: 32px 26px;
+  }
+  .cardContent ul {
+    margin-left: 16px;
+    font-size: 10px;
+  }
+  .cardContent ul li {
+    --size: 12px;
+  }
+  .cardContent ul li::before{
+    left: -20px;
+    top: 0px;
+  }
+}
+
+@media (max-width: 770px) {
+  #brand {
+    height: 100%;
+  }
+  .brandCtr {
+    padding: 7rem 1rem;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .c1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bht,
+  .bht span {
+    font-size: 42px;
+  }
+  .bhb {
+    font-size: 42px;
+  }
+}
+@media (max-width: 750px) {
+    .btn{
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+  .bht,
+  .bht span {
+    font-size: 36px;
+  }
+  .bhb {
+    font-size: 36px;
+  }
+  .content p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .bht,
+  .bht span {
+    font-size: 36px;
+  }
+  .bhb {
+    font-size: 32px;
+  }
+}
+@media (max-width: 366px) {
+  .bht,
+  .bht span {
+    font-size: 36px;
+  }
+  .bhb {
+    font-size: 26px;
+  }
+}

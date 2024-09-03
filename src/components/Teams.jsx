@@ -3,6 +3,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import styles from "../styles/Teams.module.css";
 
 import { Tilt } from "react-tilt";
+import { Link } from "react-router-dom";
 
 function Teams() {
   const defaultOptions = {
@@ -49,7 +50,7 @@ function Teams() {
             </div>
           </div>
         </Tilt>
-        <Tilt options={defaultOptions}>
+        <Link to="/careers">
           <div className={`${styles.teamCard} ${styles.careersCard}`}>
             <div className={styles.careersCta}>
               <span>You can be the part of our team</span>
@@ -69,7 +70,7 @@ function Teams() {
               </span>
             </div>
           </div>
-        </Tilt>
+        </Link>
       </div>
     </section>
   );

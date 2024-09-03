@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isMenuActive, setIsMenuActive] = useState(false);
@@ -53,7 +53,11 @@ function Navbar() {
       });
     });
     
-    heroSectionObserver.observe(heroSection);
+    try {
+      heroSectionObserver.observe(heroSection);
+    } catch (error) {
+      console.error(error)
+    }
   },[])
 
   return (
@@ -71,10 +75,10 @@ function Navbar() {
           >
             <i className="fi fi-rr-cross-small"></i>Close
           </button>
-          <li><a href="/" className="active-nav-link">Home</a></li>
-          <li><Link to="/careers">Careers</Link></li>
-          <li><Link to="/blog">Stories</Link></li>
-          <li><Link to="/about">About</Link></li>
+          <li><a href="/">Home</a></li>
+          <li><NavLink to="/careers">Careers</NavLink></li>
+          <li><NavLink to="/blog">Stories</NavLink></li>
+          <li><NavLink to="/about">About</NavLink></li>
           <Link to="/build-brand" className="nav-btn mobile-nav-btn">Let's Build Together</Link>
         </ul>
 
