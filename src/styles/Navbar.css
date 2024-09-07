@@ -51,6 +51,9 @@ nav {
 .nav-link-list li a.active{
   color: var(--primary);
 }
+.transparent-nav .nav-link-list li a.active{
+  color: var(--primary);
+}
 a.nav-btn {
   font-size: 14px;
   font-family: var(--playfair);

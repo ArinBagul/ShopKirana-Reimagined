@@ -36,38 +36,50 @@ function Navbar() {
     }
   }, [isMenuActive]);
 
-  useEffect(()=>{
+  useEffect(() => {
     const navBar = document.getElementById("navbar");
+    const homeLink = document.getElementById("home-link");
     const heroSection = document.getElementById("hero");
 
-    const heroSectionObserver = new IntersectionObserver(function(
+    const heroSectionObserver = new IntersectionObserver(function (
       entries,
       heroSectionObserver
     ) {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           navBar.classList.add("transparent-nav");
+          homeLink.classList.add("active")
         } else {
           navBar.classList.remove("transparent-nav");
+          homeLink.classList.remove("active")
         }
       });
     });
-    
+
     try {
       heroSectionObserver.observe(heroSection);
     } catch (error) {
-      console.error(error)
+      console.error(error);
     }
-  },[])
+  }, []);
+
+  function handleLinkClick() {
+    setIsMenuActive(false);
+  }
 
   return (
     <nav>
       <div className="navbar" id="navbar">
         <div className="shop-kirana-logo">
-          <a href="#"><span>Shop.</span>Kirana</a>
+          <a href="#">
+            <span>Shop.</span>Kirana
+          </a>
         </div>
 
-        <ul className={`nav-link-list ${isMenuActive ? "active-menu" : ""}`} id="nav-link-list">
+        <ul
+          className={`nav-link-list ${isMenuActive ? "active-menu" : ""}`}
+          id="nav-link-list"
+        >
           <button
             className="menu-btn close-btn"
             id="close-menu-btn"
@@ -75,14 +87,36 @@ function Navbar() {
           >
             <i className="fi fi-rr-cross-small"></i>Close
           </button>
-          <li><a href="/">Home</a></li>
-          <li><NavLink to="/careers">Careers</NavLink></li>
-          <li><NavLink to="/blog">Stories</NavLink></li>
-          <li><NavLink to="/about">About</NavLink></li>
-          <Link to="/build-brand" className="nav-btn mobile-nav-btn">Let's Build Together</Link>
+          <li>
+            <a href="/" id="home-link">Home</a>
+          </li>
+          <li>
+            <NavLink to="/careers" onClick={handleLinkClick}>
+              Careers
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/blog" onClick={handleLinkClick}>
+              Stories
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" onClick={handleLinkClick}>
+              About
+            </NavLink>
+          </li>
+          <Link
+            to="/build-brand"
+            className="nav-btn mobile-nav-btn"
+            onClick={handleLinkClick}
+          >
+            Let's Build Together
+          </Link>
         </ul>
 
-        <Link to="/build-brand" className="nav-btn big-scr-btn">Let's Build Together</Link>
+        <Link to="/build-brand" className="nav-btn big-scr-btn">
+          Let's Build Together
+        </Link>
         <button className="menu-btn" id="menu-btn" aria-label="Open Menu">
           Menu <i className="fi fi-br-menu-burger"></i>
         </button>
