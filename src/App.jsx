@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Brand from "./pages/Brand";
 
 import { Route, Routes } from "react-router-dom";
+import Careers from "./pages/Careers";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/career" element={<Careers />} />
+        <Route path="/careers" element={<Careers />} />
         <Route path="/about" element={<About />} />
         <Route path="/build-brand" element={<Brand />} />
       </Routes>

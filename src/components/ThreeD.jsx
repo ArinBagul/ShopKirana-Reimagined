@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Spline from "@splinetool/react-spline";
 
-function loader() {
+function Loader() {
   return <h1>Loading 3D Model</h1>;
 }
 
@@ -12,7 +12,7 @@ function ThreeD() {
   };
   return (
     <>
-      {!isLoaded && <loader />}
+      {!isLoaded && <Loader />}
       <Spline
         scene="https://prod.spline.design/bx921hJfdkR0JkIL/scene.splinecode"
         onLoad={handleLoad}
