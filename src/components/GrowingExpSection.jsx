@@ -18,6 +18,38 @@ function GrowingExpSection() {
   const isMobile = window.innerWidth <= 768;
 
   useGSAP(()=>{
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: `.aos-container`, // Element that triggers the animation
+        start: "top 50%", // Animation starts when the top of the element hits 80% of the viewport
+        end: "bottom 20%", // Ends when the bottom of the element hits 20% of the viewport
+        toggleActions: "play none none none", // Defines behavior on entering and leaving the viewport
+        scrub: 2
+      },
+    });
+
+    tl.from(`.part-one`, {
+      x: 50,
+      opacity: 0,
+      duration: 0.5,
+    },">");
+    tl.from(`.p2-head`, {
+      opacity: 0,
+      scale: 0.7,
+      duration: 0.5,
+    },">");
+    tl.from(`.aos-p2-txt`, {
+      opacity: 0,
+      x:50,
+      duration: 0.5,
+    },">");
+    tl.from(`.part-two-img`, {
+      opacity: 0,
+      scale: 0.7,
+      duration: 0.5,
+    },">");
+
     gsap.to(".aos-container",{
       transform: isMobile ? "translateX(-100%)" : "translateX(-80%)",
       scrollTrigger: {
