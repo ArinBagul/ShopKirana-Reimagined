@@ -12,6 +12,7 @@ import Brand from "./pages/Brand";
 import { Route, Routes } from "react-router-dom";
 import Careers from "./pages/Careers";
 import Preloader from "./components/Preloader";
+import Blogs from "./pages/Blogs";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -19,7 +20,6 @@ function App() {
     setTimeout(() => {
       setLoading(false)
     }, 10000);
-
   },[])
 
   return (
@@ -32,6 +32,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/career" element={<Careers />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/blog" element={<Blogs />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/about" element={<About />} />
         <Route path="/build-brand" element={<Brand />} />
       </Routes>

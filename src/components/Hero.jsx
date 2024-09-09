@@ -3,6 +3,7 @@ import "../styles/Hero.css";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
 
 function Hero() {
   gsap.registerPlugin(useGSAP);
@@ -56,19 +57,19 @@ function Hero() {
               <a href="https://www.instagram.com/kisankirana">
                 <i className="bi bi-instagram" />
               </a>
-              <a href="https://in.linkedin.com/company/shopkirana">
+              <a href="https://www.facebook.com/ShopKirana-110233949323823/">
                 <i className="bi bi-facebook" />
               </a>
-              <a href="https://www.facebook.com/ShopKirana-110233949323823/">
+              <a href="https://in.linkedin.com/company/shopkirana">
                 <i className="bi bi-linkedin" />
               </a>
             </div>
           </div>
 
           <div className="hero-cta">
-            <a href="#contact-section" className="p-btn">
+            <Link to="/build-brand" className="p-btn">
               Get Started
-            </a>
+            </Link>
             <a href="#impact" className="s-btn">
               Explore More
             </a>

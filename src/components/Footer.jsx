@@ -14,10 +14,10 @@ function Footer() {
           <a href="https://www.instagram.com/kisankirana" target="_blank">
             <Insta />
           </a>
-          <a href="https://in.linkedin.com/company/shopkirana" target="_blank">
+          <a href="https://www.facebook.com/ShopKirana-110233949323823/" target="_blank">
             <Facebook />
           </a>
-          <a href="https://www.facebook.com/ShopKirana-110233949323823/" target="_blank">
+          <a href="https://in.linkedin.com/company/shopkirana" target="_blank">
             <Linkedin />
           </a>
         </div>

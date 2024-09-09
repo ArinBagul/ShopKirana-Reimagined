@@ -67,6 +67,9 @@
     filter: grayscale(1);
 }
 .memberCard{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     position: absolute;
     bottom: 0;
     left: 0;

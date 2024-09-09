@@ -96,7 +96,7 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/blog" onClick={handleLinkClick}>
+            <NavLink to="/blogs" onClick={handleLinkClick}>
               Stories
             </NavLink>
           </li>

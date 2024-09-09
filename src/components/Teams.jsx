@@ -4,6 +4,7 @@ import styles from "../styles/Teams.module.css";
 
 import { Tilt } from "react-tilt";
 import { Link } from "react-router-dom";
+import Linkedin from "../assets/Linkedin";
 
 function Teams() {
   const defaultOptions = {
@@ -29,24 +30,39 @@ function Teams() {
         <Tilt options={defaultOptions}>
           <div className={`${styles.teamCard} ${styles.m1}`}>
             <div className={styles.memberCard}>
-              <h3>Tanutejas Saraswat</h3>
-              <p>CEO & Founder</p>
+              <div>
+                <h3>Tanutejas Saraswat</h3>
+                <p>CEO & Founder</p>
+              </div>
+              <div>
+                <a href="https://in.linkedin.com/in/tanutejas" target="_blank"><Linkedin /></a>
+              </div>
             </div>
           </div>
         </Tilt>
         <Tilt options={defaultOptions}>
           <div className={`${styles.teamCard} ${styles.m2}`}>
             <div className={styles.memberCard}>
-              <h3>Deepak Dhanotiya</h3>
-              <p>Founder & Supply Chain</p>
+              <div>
+                <h3>Deepak Dhanotiya</h3>
+                <p>Founder & Supply Chain</p>
+              </div>
+              <div>
+              <a href="https://in.linkedin.com/in/deepak-dhanotiya-4756b723?trk=org-employees_mini-profile_title" target="_blank"><Linkedin /></a>
+              </div>
             </div>
           </div>
         </Tilt>
         <Tilt options={defaultOptions}>
           <div className={`${styles.teamCard} ${styles.m3}`}>
             <div className={styles.memberCard}>
-              <h3>Sumit Ghorawat</h3>
-              <p>Co-founder at ShopKirana</p>
+            <div>
+                <h3>Sumit Ghorawat</h3>
+                <p>Co-founder at ShopKirana</p>
+              </div>
+              <div>
+              <a href="https://in.linkedin.com/in/sumit-ghorawat-b2018332?trk=public_profile_browsemap_mini-profile_title" target="_blank"><Linkedin /></a>
+              </div>
             </div>
           </div>
         </Tilt>
