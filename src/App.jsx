@@ -8,6 +8,7 @@ import "./App.css";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Brand from "./pages/Brand";
+import Article from "./pages/Article";
 
 import { Route, Routes } from "react-router-dom";
 import Careers from "./pages/Careers";
@@ -34,6 +35,7 @@ function App() {
         <Route path="/careers" element={<Careers />} />
         <Route path="/blog" element={<Blogs />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/article" element={<Article />} />
         <Route path="/about" element={<About />} />
         <Route path="/build-brand" element={<Brand />} />
       </Routes>

@@ -1,6 +1,7 @@
 #blogs_page {
   padding: 0 3rem;
   padding-top: 6rem;
+  padding-bottom: 2rem;
 }
 
 .featured_card {
@@ -13,6 +14,7 @@
   border-radius: 18px;
   overflow: hidden;
   margin: 2rem 0;
+  cursor: pointer;
 }
 
 

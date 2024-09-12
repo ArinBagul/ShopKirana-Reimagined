@@ -2,6 +2,8 @@ import React from "react";
 import styles from "../styles/Blogs.module.css";
 import FeaturedBlog from "../components/FeaturedBlog";
 import BlogCard from "../components/BlogCard";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 function Blogs() {
   const plus = (
@@ -20,45 +22,23 @@ function Blogs() {
   );
 
   return (
-    <section id={`${styles.blogs_page}`}>
-      {/* <FeaturedBlog /> */}
-      <div className={`${styles.featured_card}`}>
-        <div className={`${styles.featured_content}`}>
-          <span className={`${styles.featured_badge}`}>Featured</span>
-          <h4 className={`${styles.featured_blog_heading}`}>
-            ShopKirana (DIRECT) raised $38Mn (285 Crore~) led by Sixth Sense
-            Ventures, Oman India, Info Edge.
-          </h4>
-          <p className={`${styles.featured_blog_content}`}>
-            Business-to-business FMCG startup Shopkirana said it has raised $38
-            million from Sixth Sense Ventures, Oman India joint investment
-            fund, Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum exercitationem eum facere quis blanditiis odit qui veritatis beatae quae? Exercitationem incidunt at temporibus ex magni ratione itaque officiis doloremque numquam repellat? Quos enim in animi soluta quod atque vel suscipit, possimus, quae reprehenderit tenetur consequuntur est voluptates omnis veniam!
-          </p>
+    <>
+      <section id={`${styles.blogs_page}`}>
+        <FeaturedBlog route_path='/article' />
+        
+        <div className={`${styles.heading}`}>
+          <h4>Discover all articles</h4>
+          <a href="#" className={`${styles.create_blog_button}`}>
+            {plus} Share your story
+          </a>
         </div>
-        <div className={`${styles.featured_blog_image}`}>
-          <img
-            src="https://static.wixstatic.com/media/c45202_ae229d7a1340447b99e248f9f9fbf1a4~mv2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90,enc_auto/c45202_ae229d7a1340447b99e248f9f9fbf1a4~mv2.jpg"
-            alt="featured blog image"
-          />
+        <div className={`${styles.blogs_container}`}>
+          <BlogCard route_path='/article'/>
         </div>
-      </div>
-      <div className={`${styles.heading}`}>
-        <h4>Discover all articles</h4>
-        <a href="#" className={`${styles.create_blog_button}`}>
-          {plus} Share your story
-        </a>
-      </div>
-      <div className={`${styles.blogs_container}`}>
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-      </div>
-    </section>
+      </section>
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

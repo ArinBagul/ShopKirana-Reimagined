@@ -71,7 +71,7 @@ function Navbar() {
     <nav>
       <div className="navbar" id="navbar">
         <div className="shop-kirana-logo">
-          <a href="#">
+          <a href="/">
             <span>Shop.</span>Kirana
           </a>
         </div>

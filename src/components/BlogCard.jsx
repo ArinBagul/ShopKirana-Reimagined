@@ -1,7 +1,8 @@
 import React from 'react'
 import styles from "../styles/Blogs.module.css";
+import { useNavigate } from 'react-router-dom';
 
-function BlogCard() {
+function BlogCard(props) {
     const calendar = (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -49,9 +50,15 @@ function BlogCard() {
           </defs>
         </svg>
       );
+
+      const route_path = props.route_path
+      const navigate = useNavigate()
+      const handleBlogClick = () =>{
+        navigate(route_path)
+      }
       
   return (
-    <div className={`${styles.blog_card}`}>
+    <div className={`${styles.blog_card}`} onClick={handleBlogClick}>
           <div className={`${styles.blog_image}`}>
             <img
               src="https://static.wixstatic.com/media/c45202_ae229d7a1340447b99e248f9f9fbf1a4~mv2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90,enc_auto/c45202_ae229d7a1340447b99e248f9f9fbf1a4~mv2.jpg"
