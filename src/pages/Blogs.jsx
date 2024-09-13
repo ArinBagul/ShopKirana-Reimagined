@@ -24,7 +24,7 @@ function Blogs() {
   return (
     <>
       <section id={`${styles.blogs_page}`}>
-        <FeaturedBlog route_path='/article' />
+        <FeaturedBlog route_path='article' />
         
         <div className={`${styles.heading}`}>
           <h4>Discover all articles</h4>
@@ -33,7 +33,7 @@ function Blogs() {
           </a>
         </div>
         <div className={`${styles.blogs_container}`}>
-          <BlogCard route_path='/article'/>
+          <BlogCard route_path='article'/>
         </div>
       </section>
       <Contact />

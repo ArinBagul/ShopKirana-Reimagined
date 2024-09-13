@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/CareerHero.module.css";
 
 import careersHand from "../assets/images/careershand.png";
+import { Link } from "react-router-dom";
 
 function CareerHero() {
   return (
@@ -13,9 +14,9 @@ function CareerHero() {
           Build people first, they will build the company later. Do you think
           you can change the Indian Retail?
         </p>
-        <a href="" className={`${styles.btn} p-btn`}>
+        <Link to="apply" className={`${styles.btn} p-btn`}>
           Apply Now
-        </a>
+        </Link>
 
         <img src={careersHand} alt="" className={styles.heroimg} />
       </div>

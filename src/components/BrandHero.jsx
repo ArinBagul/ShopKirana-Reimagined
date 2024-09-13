@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/BrandHero.module.css";
+import { Link } from "react-router-dom";
 
 function BrandHero() {
   return (
@@ -22,9 +23,9 @@ function BrandHero() {
               significant market share in its category.
             </p>
           </div>
-          <a href="" className={`${styles.btn} p-btn`}>
+          <Link to="apply" className={`${styles.btn} p-btn`}>
             Apply Now
-          </a>
+          </Link>
         </div>
         <div className={styles.c2}>
           <div className={styles.card}>
